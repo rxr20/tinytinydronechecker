@@ -1,0 +1,16 @@
+# virtual environments (run.bat creates demo/.venv)
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

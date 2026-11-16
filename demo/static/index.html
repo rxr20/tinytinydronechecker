@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TINY TINY DRONE CHECKER</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">TINY TINY DRONE <span>CHECKER</span></div>
+    <div class="sys">SKY MONITOR // NODE-07 <span class="dot"></span> ONLINE</div>
+  </header>
+
+  <main>
+    <!-- left: simulated security camera -->
+    <section class="cam">
+      <div class="feed">
+        <img id="frame" alt="camera feed">
+        <div class="scanlines"></div>
+        <div class="corner tl"></div><div class="corner tr"></div>
+        <div class="corner bl"></div><div class="corner br"></div>
+        <div class="reticle"></div>
+
+        <div class="osd top-left"><span class="rec"></span> LIVE · CAM-03</div>
+        <div class="osd top-right" id="clock">--:--:--</div>
+        <div class="osd bottom-left">SECTOR 7 · SKYWATCH</div>
+        <div class="osd bottom-right" id="frame-id">FRM 000000</div>
+        <div class="no-signal" id="no-signal">NO SIGNAL<small>add images to demo/camsim</small></div>
+      </div>
+    </section>
+
+    <!-- right: analysis -->
+    <section class="analysis">
+      <div class="panel-title">// ANALYSIS</div>
+      <img id="cat" class="cat" src="/static/img/catgeneral.png" alt="DroneCheck agent">
+      <div id="verdict" class="verdict">SCANNING</div>
+      <div class="meter">
+        <div class="meter-label"><span>CONFIDENCE</span><span id="conf-text">--</span></div>
+        <div class="bar"><div id="conf-bar"></div></div>
+      </div>
+      <ul id="log" class="log"></ul>
+
+      <!-- last analyzed frame, as a stamped case file -->
+      <div id="file" class="file">
+        <div class="file-tab" id="file-tab">CASE FILE</div>
+        <div class="file-body">
+          <img id="thumb" alt="">
+          <div class="file-meta"><span id="file-name">--</span><span id="file-time">--</span></div>
+          <div id="stamp" class="stamp"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
