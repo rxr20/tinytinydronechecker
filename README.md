@@ -141,3 +141,9 @@ Python · PyTorch · torchvision · ResNet18 · Pillow · HTML / CSS / JavaScrip
 ## 🙏 Credits
 
 - Images: [Drone vs Bird dataset on Kaggle](https://www.kaggle.com/datasets/muhammadsaoodsarwar/drone-vs-bird)
+
+## 📄 License
+
+This project was made for research and educational purposes, as part of learning machine learning. It is not intended for real-world security or surveillance use.
+
+The code is licensed under Apache 2.0. The images come from the [Drone vs Bird dataset on Kaggle](https://www.kaggle.com/datasets/muhammadsaoodsarwar/drone-vs-bird) and keep their original license. The model was fine-tuned from torchvision's ImageNet-pretrained ResNet18, whose weights may carry ImageNet's terms, so it's intended for learning and non-commercial use.
